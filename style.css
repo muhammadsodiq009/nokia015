@@ -1,0 +1,143 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+body{
+    min-height: 500vh;
+}
+.container{
+    width: 70%;
+    min-height: 300px;
+    border: 2px solid red;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.container h2{
+    font-size: 80px;
+}
+
+.wrapper{
+    padding: 30px 15%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+.card{
+    min-height: 250px;
+    border: 1px solid #ddd;
+    padding: 16px;
+}
+.card img{
+    width: 100%;
+}
+
+
+.flex{
+    padding: 30px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.box{
+    width: 290px;
+    border: 1px solid #ddd;
+    padding: 16px;
+}
+.box img{
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    color: #eee;
+}
+.navbar ul{
+    display: flex;
+    gap: 40px ;
+    list-style: none;
+}
+.hamburger{
+    display: none;
+}
+.hamburger div{
+    width: 30px;
+    height: 3px;
+    background: #eee;
+    margin-top: 3px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px) {
+    .container{
+        width: 80%;
+        background: pink;
+    }
+    .container h2{
+        font-size: 40px;
+    }
+    .wrapper{
+    grid-template-columns: repeat(2, 1fr);
+        padding: 30px 10%;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .navbar ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 90%;
+        background-color: aqua;
+    }
+    .container h2{
+        font-size: 28px;
+    }
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+            padding: 30px 3%;
+        }
+}

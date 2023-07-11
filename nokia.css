@@ -1,0 +1,145 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+.navbar__top{
+    width: 100%;
+    height: 40px;
+    background: #F3F3F3;
+}
+.navbar__top ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 70px;
+    font-weight: 300;
+    font-size: 19px;
+    color: #00173F;
+    padding: 10px;
+    margin-left: 70% ;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 10px;
+}
+.logo{
+    padding-left: 40px;
+    height: 80px;
+    flex: 1;
+    cursor: pointer;
+
+}
+.navbar ul{
+    list-style: none ;
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+    color: dodgerblue;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.hamburger{
+    width: 31px;
+    height: 6px;
+}
+.hamburger div{
+    width: 30px;
+    height: 5px;
+    background: dodgerblue;
+    border-radius: 5px;
+    display: none;
+}
+.img{
+    width: 100%;
+    height: 250px;
+    background: url(./OI_Reflection_02_LR_RGB.jpg.webp)no-repeat center/cover;
+}
+.img h2{
+    font-size: 53px;
+    font-weight: 300;
+    padding: 100px 60px   ;
+    color: white;
+}
+.banner h2{
+    padding: 30px 20%;
+    color: black;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.title{
+    width: 100%;
+    height: 60px;
+    padding: 30px 5%;
+}
+.title h2{
+    font-size: 36px ;
+    font-weight: 200;
+}
+
+
+
+.cards{
+    width: 100%;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 5%;
+    grid-gap: 20px;
+}
+.card{
+    
+    border-radius: 8px;
+    border: 1px solid dodgerblue;
+}
+.first{
+    width: 330px;
+    
+    background: url(./bss-oss_small.jpg.webp)
+    no-repeat center/cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1370px) {
+    .navbar__top{
+        display: none;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .banner{
+        padding: 30px 10px;
+        font-size: 27px;
+    }
+}
+
